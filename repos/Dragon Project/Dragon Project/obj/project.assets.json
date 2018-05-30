@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VuNguyen\\source\\repos\\Dragon Project\\Dragon Project\\Dragon Project.csproj",
-      "projectName": "Dragon Project",
-      "projectPath": "C:\\Users\\VuNguyen\\source\\repos\\Dragon Project\\Dragon Project\\Dragon Project.csproj",
+      "projectUniqueName": "C:\\Users\\VuNguyen\\Desktop\\DragonProjectCSharp\\repos\\Dragon Project\\Dragon Project\\Dragon_Project.csproj",
+      "projectName": "Dragon_Project",
+      "projectPath": "C:\\Users\\VuNguyen\\Desktop\\DragonProjectCSharp\\repos\\Dragon Project\\Dragon Project\\Dragon_Project.csproj",
       "packagesPath": "C:\\Users\\VuNguyen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VuNguyen\\source\\repos\\Dragon Project\\Dragon Project\\obj\\",
+      "outputPath": "C:\\Users\\VuNguyen\\Desktop\\DragonProjectCSharp\\repos\\Dragon Project\\Dragon Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

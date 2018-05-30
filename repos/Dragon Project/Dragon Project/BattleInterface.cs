@@ -6,6 +6,25 @@ namespace Dragon_Project
 {
     class BattleInterface
     {
+        internal static void BattleCycle(Dragon player, Dragon enemy)
+        {
+            int round = 1;
+            do
+            {
+                BattleInterface.AllCooldownDrop(player, enemy);
+                SkillSystem.BuffAnnounce(player, enemy);
+                SkillSystem.BuffAnnounce(enemy, player);
+                BattleInterface.VersusTime(player, enemy);
+
+                if (player.HP > 0 && enemy.HP > 0)
+                {
+                    BattleInterface.RoundAnnounce(player, enemy, round);
+                    round++;
+                }
+
+            } while (player.HP > 0 && enemy.HP > 0);
+        }
+
         internal static void DisplayStats(Dragon dragon)
         {
             Console.WriteLine("{1}'s type is {0}.", dragon.Type, dragon.Name);
@@ -55,12 +74,12 @@ namespace Dragon_Project
                     }
                     else
                     {
-                        Util.WriteInRed("Invalid input! Please select a valid skill!");
+                        Util.WriteLineInRed("Invalid input! Please select a valid skill!");
                     }
                 }
                 catch (Exception)
                 {
-                    Util.WriteInRed("Error choosing skill!");
+                    Util.WriteLineInRed("Error choosing skill!");
                 }
             } while (!validSkill || !confirmChoice);
 

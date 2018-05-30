@@ -11,7 +11,7 @@ namespace Dragon_Project
         {
             if (newDragon.Type == "All Rounder")
             {
-                BaseStatDistribution(newDragon, 5, 5, 5, 5, 5, 5,
+                BaseStatDistribution(newDragon, 50, 5, 5, 5, 5, 5,
                                      55, 55, 55, 55, 55, 50,
                                      80, 10, 12, 7);
             }
@@ -44,11 +44,22 @@ namespace Dragon_Project
                                      77, 8, 9, 4);
             }
 
-            if (newDragon.Type == "Noob")
+            ///////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////
+
+            if (newDragon.Type == "Bandit")
             {
                 BaseStatDistribution(newDragon, 6, 4, 4, 4, 5, 6,
                                      45, 45, 45, 45, 45, 45,
                                      80, 5, 7, 5);
+            }
+
+            if (newDragon.Type == "Fledgling Knight")
+            {
+                BaseStatDistribution(newDragon, 5, 7, 6, 3, 3, 4,
+                                     45, 45, 45, 45, 45, 45,
+                                     75, 10, 8, 8);
             }
         }
 
@@ -112,14 +123,14 @@ namespace Dragon_Project
                     else
                     {
                         validDragonType = false;
-                        Util.WriteInRed("\nThis is an invalid dragon type!");
+                        Util.WriteLineInRed("\nThis is an invalid dragon type!");
                         Util.SPause();
-                        Util.WriteInRed("Please enter a valid dragon type from the list!");
+                        Util.WriteLineInRed("Please enter a valid dragon type from the list!");
                     }
                 }
                 catch (FormatException)
                 {
-                    Util.WriteInRed("\nError choosing dragon type!");
+                    Util.WriteLineInRed("\nError choosing dragon type!");
                 }
                 
             } while (!validDragonType);

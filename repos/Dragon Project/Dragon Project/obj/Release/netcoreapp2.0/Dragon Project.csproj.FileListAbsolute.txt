@@ -9,3 +9,14 @@ C:\Users\VuNguyen\source\repos\Dragon Project\Dragon Project\obj\Release\netcore
 C:\Users\VuNguyen\source\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.AssemblyInfo.cs
 C:\Users\VuNguyen\source\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.dll
 C:\Users\VuNguyen\source\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.pdb
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\bin\Release\netcoreapp2.0\Dragon Project.deps.json
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\bin\Release\netcoreapp2.0\Dragon Project.runtimeconfig.json
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\bin\Release\netcoreapp2.0\Dragon Project.runtimeconfig.dev.json
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\bin\Release\netcoreapp2.0\Dragon Project.dll
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\bin\Release\netcoreapp2.0\Dragon Project.pdb
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.csprojAssemblyReference.cache
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.csproj.CoreCompileInputs.cache
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.AssemblyInfoInputs.cache
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.AssemblyInfo.cs
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.dll
+C:\Users\VuNguyen\Desktop\DragonProjectCSharp\repos\Dragon Project\Dragon Project\obj\Release\netcoreapp2.0\Dragon Project.pdb

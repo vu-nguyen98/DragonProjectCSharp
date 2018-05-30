@@ -12,13 +12,13 @@ namespace Dragon_Project
             int selection = 0;
             if (enemy.AIBehaviorID == 0)
             {
-                selection = NoobBehavior(enemy);
+                selection = BanditBehavior(enemy);
                 return selection;
             }
             return selection;
         }
 
-        internal static int NoobBehavior(Dragon enemy)
+        internal static int BanditBehavior(Dragon enemy)
         {
             Random random = new Random();
             if (enemy.SP > 25 && enemy.SkillCooldown[1] == 0)

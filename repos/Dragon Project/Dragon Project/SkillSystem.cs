@@ -52,10 +52,17 @@ namespace Dragon_Project
             }
 
 
-            if (newDragon.Type == "Noob")
+            if (newDragon.Type == "Bandit")
             {
                 newDragon.Skills.Add(0);
                 newDragon.Skills.Add(1);
+            }
+
+            if (newDragon.Type == "Fledgling Knight")
+            {
+                newDragon.Skills.Add(0);
+                newDragon.Skills.Add(4);
+                newDragon.Skills.Add(2);
             }
         }
 
@@ -79,7 +86,7 @@ namespace Dragon_Project
                     Console.WriteLine("{0}. Defend", index);
                     break;
                 default:
-                    Util.WriteInRed("Invalid input!");
+                    Util.WriteLineInRed("Invalid input!");
                     break;
             }
         }
@@ -101,8 +108,8 @@ namespace Dragon_Project
                             //if it's the first turn that the buff was applied
                             if (player1.BuffDuration[3] < 4)
                             {
-                                Util.WriteInRed("==Pommel Debuff==");
-                                Util.WriteInRed(player2.Name + " restored 1 resilience!");
+                                Util.WriteLineInRed("==Pommel Debuff==");
+                                Util.WriteLineInRed(player2.Name + " restored 1 resilience!");
                             }
 
                             player1.BuffDuration[3]--;
@@ -110,7 +117,7 @@ namespace Dragon_Project
 
                             if (player1.BuffDuration[3] == 0)
                             {
-                                Util.WriteInRed("The debuff wore off completely!");
+                                Util.WriteLineInRed("The debuff wore off completely!");
                             }
                         }
                         break;
@@ -148,13 +155,13 @@ namespace Dragon_Project
                     confirm = ConfirmSkillUse();
                     if (player.SkillCooldown[1] > 0)
                     {
-                        Util.WriteInRed("This skill is currently on cooldown!");
-                        Util.WriteInRed("Turn(s) remaining: " + player.SkillCooldown[1]);
+                        Util.WriteLineInRed("This skill is currently on cooldown!");
+                        Util.WriteLineInRed("Turn(s) remaining: " + player.SkillCooldown[1]);
                         goto default;
                     }
                     if (player.SP<25)
                     {
-                        Util.WriteInRed("You do not have enough stamina to execute this skill!");
+                        Util.WriteLineInRed("You do not have enough stamina to execute this skill!");
                         goto default;
                     }
                     if (!confirm) goto default;
@@ -166,13 +173,13 @@ namespace Dragon_Project
                     confirm = ConfirmSkillUse();
                     if (player.SkillCooldown[2] > 0)
                     {
-                        Util.WriteInRed("This skill is currently on cooldown!");
-                        Util.WriteInRed("Turn(s) remaining: " + player.SkillCooldown[2]);
+                        Util.WriteLineInRed("This skill is currently on cooldown!");
+                        Util.WriteLineInRed("Turn(s) remaining: " + player.SkillCooldown[2]);
                         goto default;
                     }
                     if (player.SP < 30)
                     {
-                        Util.WriteInRed("You do not have enough stamina to execute this skill!");
+                        Util.WriteLineInRed("You do not have enough stamina to execute this skill!");
                         goto default;
                     }
                     if (!confirm) goto default;
@@ -185,13 +192,13 @@ namespace Dragon_Project
                     confirm = ConfirmSkillUse();
                     if (player.SkillCooldown[3] > 0)
                     {
-                        Util.WriteInRed("This skill is currently on cooldown!");
-                        Util.WriteInRed("Turn(s) remaining: " + player.SkillCooldown[3]);
+                        Util.WriteLineInRed("This skill is currently on cooldown!");
+                        Util.WriteLineInRed("Turn(s) remaining: " + player.SkillCooldown[3]);
                         goto default;
                     }
                     if (player.SP < 20)
                     {
-                        Util.WriteInRed("You do not have enough stamina to execute this skill!");
+                        Util.WriteLineInRed("You do not have enough stamina to execute this skill!");
                         goto default;
                     }
                     if (!confirm) goto default;

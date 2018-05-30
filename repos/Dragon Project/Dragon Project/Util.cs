@@ -21,10 +21,31 @@ namespace Dragon_Project
             System.Threading.Thread.Sleep(1000);
         }
 
+        internal static void WriteLineInRed(string value)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(value);
+            Console.ResetColor();
+        }
+
         internal static void WriteInRed(string value)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(value);
+            Console.ResetColor();
+        }
+
+        internal static void WriteInGreen(string value)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(value);
+            Console.ResetColor();
+        }
+
+        internal static void WriteLineInGreen(string value)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(value);
             Console.ResetColor();
         }
 
