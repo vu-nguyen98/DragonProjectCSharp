@@ -201,16 +201,14 @@ namespace Dragon_Project
             double hitRateModifier = 0;
             double critRateModifier = 0;
             int damageDealt = 0;
-            double variance = random.Next(85, 115) * 0.01;
+            double variance = random.Next(90, 110) * 0.01;
 
             double actualHitRate = player1.HitRate + hitRateModifier - player2.EvdRate;
             double actualCritRate = player1.CritRate + critRateModifier - player2.CritEvdRate;
-            int attack = player1.Strength * 3;
-            int defense = player2.Resilience * 2;
 
             if (actualHitRate > random.Next(0, 100))
             {
-                damageDealt = (int)((variance) * (attack * 3 - defense * 1.5));
+                damageDealt = (int)((variance) * (player1.Attack - player2.Defense));
                 if (actualCritRate > random.Next(0, 100))
                 {
                     Console.WriteLine("A critical strike! This should hurt!");
@@ -239,16 +237,16 @@ namespace Dragon_Project
             int damageDealt = 0;
             double variance = random.Next(75, 125) * 0.01;
 
-            player1.SP -= 25;
+            player1.SP -= 5;
 
             double actualHitRate = player1.HitRate + hitRateModifier - player2.EvdRate;
             double actualCritRate = player1.CritRate + critRateModifier - player2.CritEvdRate;
-            int attack = player1.Strength * 3;
+            int attack = player1.Strength * 2;
             int defense = player2.Resilience * 2;
 
             if (actualHitRate > random.Next(0, 100))
             {
-                damageDealt = (int)((variance) * (attack * 5 - defense * 2.5));
+                damageDealt = (int)((variance) * (player1.Attack * 1.25 - player2.Defense));
                 if (actualCritRate > random.Next(0, 100))
                 {
                     Console.WriteLine("A critical strike! This should hurt!");

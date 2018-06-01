@@ -11,36 +11,36 @@ namespace Dragon_Project
         {
             if (newDragon.Type == "All Rounder")
             {
-                BaseStatDistribution(newDragon, 50, 5, 5, 5, 5, 5,
-                                     55, 55, 55, 55, 55, 50,
+                BaseStatDistribution(newDragon, 8, 5, 5, 5, 5, 5,
+                                     60, 60, 60, 60, 60, 50,
                                      80, 10, 12, 7);
             }
 
             if (newDragon.Type == "Vanguard")
             {
-                BaseStatDistribution(newDragon, 7, 6, 5, 3, 3, 5,
-                                     85, 55, 50, 35, 50, 50,
-                                     75, 5, 15, 5);
+                BaseStatDistribution(newDragon, 7, 6, 4, 4, 4, 5,
+                                     80, 65, 55, 45, 55, 50,
+                                     75, 5, 16, 5);
             }
 
             if (newDragon.Type == "Guardian")
             {
-                BaseStatDistribution(newDragon, 4, 7, 7, 4, 3, 5,
-                                     55, 75, 80, 45, 20, 50,
-                                     82, 15, 7, 7);
+                BaseStatDistribution(newDragon, 5, 7, 7, 3, 3, 5,
+                                     60, 75, 80, 50, 35, 50,
+                                     78, 16, 8, 10);
             }
 
             if (newDragon.Type == "Assassin")
             {
                 BaseStatDistribution(newDragon, 6, 2, 2, 7, 7, 5,
-                                     75, 25, 25, 70, 75, 50,
+                                     75, 45, 45, 70, 75, 50,
                                      85, 15, 15, 10);
             }
 
             if (newDragon.Type == "Late Bloomer")
             {
-                BaseStatDistribution(newDragon, 4, 2, 2, 3, 3, 3,
-                                     65, 60, 55, 55, 65, 55,
+                BaseStatDistribution(newDragon, 4, 2, 3, 3, 3, 3,
+                                     75, 60, 60, 55, 75, 55,
                                      77, 8, 9, 4);
             }
 
@@ -50,16 +50,16 @@ namespace Dragon_Project
 
             if (newDragon.Type == "Bandit")
             {
-                BaseStatDistribution(newDragon, 6, 4, 4, 4, 5, 6,
+                BaseStatDistribution(newDragon, 8, 3, 3, 3, 3, 6,
                                      45, 45, 45, 45, 45, 45,
-                                     80, 5, 7, 5);
+                                     80, 4, 7, 3);
             }
 
             if (newDragon.Type == "Fledgling Knight")
             {
-                BaseStatDistribution(newDragon, 5, 7, 6, 3, 3, 4,
+                BaseStatDistribution(newDragon, 7, 7, 9, 9, 5, 4,
                                      45, 45, 45, 45, 45, 45,
-                                     75, 10, 8, 8);
+                                     85, 15, 8, 8);
             }
         }
 

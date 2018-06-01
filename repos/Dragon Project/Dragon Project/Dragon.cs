@@ -36,6 +36,11 @@ namespace Dragon_Project
         private double critRate;
         private double critEvdRate;
 
+        private int attack;
+        private int defense;
+        private int weaponID;
+        private int armorID;
+
         private String type;
         List<int> skills = new List<int>();
         int[] skillCooldown = new int[99];
@@ -44,12 +49,13 @@ namespace Dragon_Project
         private int currentLevel;
         private int currentEXP;
         private int maximumEXP;
+        private int gold;
 
         private int aIBehaviorID;
 
         public string Name { get => name; set => name = value; }
-        public int MaxHP { get => (100 + Strength*8 + Endurance*13); set => maxHP = value; }
-        public int MaxSP { get => (40 + Resilience*4 + Endurance*9); set => maxSP = value; }
+        public int MaxHP { get => (50 + Strength*2 + Endurance*5); set => maxHP = value; }
+        public int MaxSP { get => (25 + Resilience*2 + Endurance*5); set => maxSP = value; }
         public int HP { get => hP; set => hP = value; }
         public int SP { get => sP; set => sP = value; }
 
@@ -72,10 +78,16 @@ namespace Dragon_Project
         public double BaseCritRate { get => baseCritRate; set => baseCritRate = value; }
         public double BaseCritEvdRate { get => baseCritEvdRate; set => baseCritEvdRate = value; }
 
-        public double HitRate { get => (BaseHitRate + Agility * 2 + Luck * 0.75); set => hitRate = value; }
-        public double EvdRate { get => (BaseEvdRate + Speed * 2 + Luck * 0.75); set => evdRate = value; }
-        public double CritRate { get => (BaseCritRate + Agility + Luck); set => critRate = value; }
-        public double CritEvdRate { get => (baseCritEvdRate + Speed * 0.5 + Luck * 0.75); set => critEvdRate = value; }
+        public double HitRate { get => (BaseHitRate + Agility * 2.2 + Luck); set => hitRate = value; }
+        public double EvdRate { get => (BaseEvdRate + Speed * 2.2 + Luck); set => evdRate = value; }
+        public double CritRate { get => (BaseCritRate + Agility + Luck * 1.5); set => critRate = value; }
+        public double CritEvdRate { get => (baseCritEvdRate + Speed * 0.5 + Luck); set => critEvdRate = value; }
+
+
+        public int Attack { get => (Strength * 3 + Agility); set => attack = value; }
+        public int Defense { get => (Resilience * 3 + Speed / 4); set => defense = value; }
+        public int WeaponID { get => weaponID; set => weaponID = value; }
+        public int ArmorID { get => armorID; set => armorID = value; }
 
         public string Type { get => type; set => type = value; }
         public List<int> Skills { get => skills; set => skills = value; }
@@ -85,6 +97,7 @@ namespace Dragon_Project
         public int CurrentLevel { get => currentLevel; set => currentLevel = value; }
         public int CurrentEXP { get => currentEXP; set => currentEXP = value; }
         public int MaximumEXP { get => maximumEXP; set => maximumEXP = value; }
+        public int Gold { get => gold; set => gold = value; }
 
         public int AIBehaviorID { get => aIBehaviorID; set => aIBehaviorID = value; }
     }
